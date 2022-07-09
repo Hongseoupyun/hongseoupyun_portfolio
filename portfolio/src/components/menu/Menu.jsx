@@ -2,21 +2,21 @@ import React from "react";
 import "./Menu.scss"
 
 export default function Menu (props){
-  const {menuOpen} = props
+  const {menuOpen, setMenuOpen} = props
   return (
     <div className={menuOpen? "menu active" : "menu"}>
       <ul>
-        <li>
+        <li onClick={()=>setMenuOpen(!menuOpen)}>
           <a href="#intro">Home</a>
         </li>
-        <li>
-          <a href="#about">About</a>
+        <li onClick={()=>setMenuOpen(!menuOpen)}>
+          <a href="#aboutme">About Me</a>
         </li>
-        <li>
+        <li onClick={()=>setMenuOpen(!menuOpen)}>
           <a href="#projects">Projects</a>
         </li>
-        <li>
-          <a href="#contact">Contact</a>
+        <li onClick={()=>setMenuOpen(!menuOpen)}>
+          <a href="#c ontact">Contact</a>
         </li>
       </ul>
       </div>

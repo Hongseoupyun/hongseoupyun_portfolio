@@ -4,8 +4,8 @@ import "./Intro.scss"
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-      intro
-
-    </div>
+      <div className="left"></div>
+      <div className="right"></div>
+    </div> 
   )
 }
