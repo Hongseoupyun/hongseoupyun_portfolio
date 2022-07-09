@@ -3,6 +3,7 @@ import Intro from "./components/intro/Intro"
 import Aboutme from "./components/aboutme/Aboutme";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import "./App.scss"
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <div className="sections">
         <Intro />
         <Aboutme />
-        <Projects/>
-        <Contact/>
+        <Projects />
+        <Contact />
       </div>
     </div>
   );

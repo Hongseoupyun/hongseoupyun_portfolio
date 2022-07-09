@@ -3,6 +3,6 @@ import "./Aboutme.scss"
 
 export default function Aboutme() {
   return(
-    <div className="aboutme">aboutme</div>
+    <div className="aboutme" id="aboutme">aboutme</div>
   )
 }
