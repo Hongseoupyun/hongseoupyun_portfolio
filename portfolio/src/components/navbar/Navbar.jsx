@@ -11,7 +11,7 @@ export default function Navbar(props) {
           <a href="#intro" className="logo">Hongseoup Yun</a>
         </div>
         <div className="right">
-          <div className="hamburger">
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
