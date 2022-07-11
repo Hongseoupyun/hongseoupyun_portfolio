@@ -1,10 +1,6 @@
 .intro {
   background-color: orange;
   display: flex;
-  .left {
-    flex: 0.5;
-  }
-  .right {
-    flex: 0.5;
-  }
+  flex-direction: column;
+  
 }
