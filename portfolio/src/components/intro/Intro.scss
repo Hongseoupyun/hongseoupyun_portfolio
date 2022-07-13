@@ -1,6 +1,53 @@
 .intro {
-  background-color: orange;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  position: relative;
+  a {
+    position: absolute;
+    bottom:10px;
+    img{
+      animation: arrowBlink 2s infinite;
+      width: 19px;
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 60px;
+    margin: 10px 0;
+  }
+  .h3 {
+    font-size: 20px;
+    margin:  0;
+    b{
+      font-size: inherit;
+      color: crimson;
+    }
+  }
+}
+.ityped-cursor{
+  animation: blink 1s infinite;
+  color:crimson ;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
   
+}
+@keyframes blink {
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
