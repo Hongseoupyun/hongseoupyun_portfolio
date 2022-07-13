@@ -1,3 +1,13 @@
-.Projects{
+.projects{
   background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .slider{
+    height: 350px;
+    display: flex;
+    position:absolute;
+    left: 0;
+  }
 }

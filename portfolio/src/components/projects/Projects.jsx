@@ -3,7 +3,7 @@ import "./Projects.scss"
 
 export default function Projects() {
   return (
-    <div className="Projects" id="projects">
+    <div className="projects" id="projects">
       <h1>Projects</h1>
       <div className="slider">
         <div className="container">
