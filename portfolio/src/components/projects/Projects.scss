@@ -4,10 +4,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  .heading{
+    position:absolute;
+    top:35px;
+  }
   .slider{
     height: 350px;
     display: flex;
     position:absolute;
     left: 0;
+    .container{
+      display: flex;
+       width: 100vw;
+       justify-content: center;
+       align-items: center;
+       .item{
+         width: 700px;
+         height: 100%;
+         background-color: white;
+         border-radius: 20px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .left{
+           flex:.45;
+           height: 93%;
+           background-color: black;
+           border-radius: 20px;
+           margin-left: 12px;
+         }
+         .right{
+           flex:.55;
+         }
+       }
+    }
   }
 }
