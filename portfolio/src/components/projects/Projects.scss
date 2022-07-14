@@ -5,6 +5,19 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  .arrow {
+    height: 55px;
+    position:absolute;
+    color: white;
+    &.left{
+      left:100px;
+      transform: rotateY(180deg);
+    }
+    &.right{
+      right: 100px;
+    }
+  }
   .heading{
     position:absolute;
     top:35px;
