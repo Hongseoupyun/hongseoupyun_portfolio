@@ -29,8 +29,9 @@ export default function Intro() {
           <b ref={textRef}></b>
         </div>
       </div>
+      <div className="caption">Go check about me!</div>
       <a className="introArrow" href="#aboutme">
-        <img src="assets/arrow-down.png"/>
+        <img src="assets/arrow-down.png" alt="" />
       </a>
     </div>
   );

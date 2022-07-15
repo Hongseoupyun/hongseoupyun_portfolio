@@ -32,8 +32,12 @@
           height: auto;
           width: 50px;
           color: #a4a5af;
+          transform: scale(1.0);
+          transition: 0.5s;
           &:hover{
             color: #ffc25b;
+            transform: scale(1.1);
+            transition: 0.5s;
           }
         }
       }

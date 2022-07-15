@@ -5,11 +5,17 @@
   flex-direction: column;
   position: relative;
   background-color: #242734;
+  .caption{
+    position: absolute;
+    bottom:40px;
+    animation: arrowBlink 2.1s infinite;
+    color: #656776;
+  }
   a {
     position: absolute;
     bottom:10px;
     img{
-      animation: arrowBlink 1.39s infinite;
+      animation: arrowBlink 2.1s infinite;
       width: 19px;
       filter: brightness(0) invert(1);
     }
