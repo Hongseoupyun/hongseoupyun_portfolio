@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.scss";
+import { FaGithubSquare } from 'react-icons/fa'
 
 export default function Contact() {
   return (
@@ -7,7 +8,7 @@ export default function Contact() {
       <div className="mainContainer">
         <div className="tittle">Contact Me</div>
         <div className="contactLinks">
-          <div className="linkedIn"></div>
+          <div className="linkedIn"><FaGithubSquare className="icons"/></div>
           <div className="gitHub"></div>
           <div className="instagram"></div>
           <div className="resume"></div>
