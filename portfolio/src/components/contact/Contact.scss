@@ -1,3 +1,19 @@
 .contact {
   background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    .tittle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .contactLinks {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
