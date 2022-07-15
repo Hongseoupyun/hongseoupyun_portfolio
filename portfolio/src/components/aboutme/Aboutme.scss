@@ -1,3 +1,23 @@
 .aboutme{
   background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMeContainer{
+  display: flex;
+  flex-direction: row;
+}
+.aboutMeImg{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.text{
+
+  .title{
+    display: flex;
+
+  }
 }
