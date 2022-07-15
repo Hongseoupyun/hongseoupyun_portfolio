@@ -1,5 +1,5 @@
 .navbar {
-  background-color: beige;
+  background-color: #242734;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -15,10 +15,10 @@
     justify-content: space-between;
     .left {
       .logo {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         text-decoration: none;
-        color:white;
+        color:#ffc25b;
       }
     }
   }
@@ -34,14 +34,14 @@
       span {
         width: 100%;
         height: 3px;
-        background-color: black;
+        background-color: white;
         transform-origin: left;
         transition: all 2s ease; 
       }
     }
   }
   &.active{
-    background-color: black;
+    background-color: #323647;
     color: white;
     .hamburger{
       span{

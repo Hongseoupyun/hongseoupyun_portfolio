@@ -1,5 +1,5 @@
 .contact {
-  background-color: lightblue;
+  background-color: #323647;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +31,9 @@
         .icons{
           height: auto;
           width: 50px;
-          color: black; 
+          color: #a4a5af;
           &:hover{
-            color: beige;
+            color: #ffc25b;
           }
         }
       }

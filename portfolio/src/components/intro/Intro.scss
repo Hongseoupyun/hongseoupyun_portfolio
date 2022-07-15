@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  background-color: #242734;
   a {
     position: absolute;
     bottom:10px;
@@ -29,7 +30,7 @@
     margin:  0;
     b{
       font-size: inherit;
-      color: crimson;
+      color: #ffc25b;
     }
   }
 }

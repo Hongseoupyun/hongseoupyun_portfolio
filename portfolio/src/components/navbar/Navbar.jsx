@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <div className={menuOpen? "navbar active" : "navbar" }>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">Hongseoup Yun</a>
+          <a href="#intro" className="logo">HSY</a>
         </div>
         <div className="right">
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

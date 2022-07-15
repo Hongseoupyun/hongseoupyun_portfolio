@@ -30,7 +30,7 @@ export default function Intro() {
         </div>
       </div>
       <a className="introArrow" href="#aboutme">
-        <img src="assets/arrow-down.png" />
+        <img src="assets/arrow-down.png"/>
       </a>
     </div>
   );
