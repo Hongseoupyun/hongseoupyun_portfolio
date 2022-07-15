@@ -23,6 +23,18 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="wrapper">
+      <ul class="bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
         <h2>Hi there, I'm</h2>
         <h1>Hongseoup Yun</h1>
         <div className="h3">

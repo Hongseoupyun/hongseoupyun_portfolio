@@ -9,7 +9,7 @@ export default function Aboutme() {
           <img className="aboutMeImg" src="assets/intro-image.png" alt="" />
         </div>
         <div className="contents">
-          <p className="title"><h1>About me</h1></p>
+          <p className="title"><h1>ABOUT ME</h1></p>
           <p className="introduction">
             I am a Full-stack developer who transitioned from the skilled-trade industry as a Technician. <br />In my previous past experience as a Technician, I was always drawn to the analytical mechanics <br />of creating a solution which is very similar to web development.This interest inspired me to pivot <br />my career into a Developer.
           </p>

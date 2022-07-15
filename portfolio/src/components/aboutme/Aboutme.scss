@@ -7,24 +7,28 @@
 .aboutMeContainer{
   display: flex;
   flex-direction: row;
+  .imgContainer{
+    margin-right: 20px;
+  }
   .contents{
     height: auto;
+    .title{
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .introduction{
+      font-size: 16px;
+      margin-bottom: 22px;
+    }
   }
 }
 .aboutMeImg{
   height: 350px;
   width: 350px;
   object-fit: cover;
-  border-radius: 15px;
-  margin-right: 20px;
+  border-radius: 20px;
 }
-.text{
 
-  .title{
-    display: flex;
-  }
-  .introduction{
-    font-size: 10px;
-    margin-bottom: 5px;
-  }
-}
+
+
+
