@@ -16,7 +16,7 @@
       font-size: 50px;
       font-weight: 500;
       position: absolute;
-      top:80px;
+      top:200px;
     }
   
     .contactLinks {
@@ -24,12 +24,17 @@
       flex-direction: row;
       width: 50vw;
       justify-content: space-around;
+      position: absolute;
+      top:375px;
       div{
         height: auto;
         .icons{
           height: auto;
           width: 50px;
           color: black; 
+          &:hover{
+            color: beige;
+          }
         }
       }
 
