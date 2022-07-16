@@ -10,8 +10,7 @@ export default function Projects() {
           <div className="item">
             <div className="left">
             </div>
-            <div className="right">
-            </div>
+            <img className="right" src="assets/SneakersPickers.gif" alt=""/>
           </div>
         </div>
       </div>
