@@ -9,6 +9,13 @@ export default function Projects() {
         <div className="container">
           <div className="item">
             <div className="left">
+              <h2>SneakersPickers</h2>
+              <p>
+              SnekersPickers is a trading platform app that users can trade their shoes.
+              </p>
+              <p>
+                
+              </p>
             </div>
             <img className="right" src="assets/SneakersPickers.gif" alt=""/>
           </div>
