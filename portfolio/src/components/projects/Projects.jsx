@@ -9,12 +9,15 @@ export default function Projects() {
         <div className="container">
           <div className="item">
             <div className="left">
-              <h2>SneakersPickers</h2>
-              <p>
+              <h2 className="title">SneakersPickers</h2>
+              <p className="description">
               SnekersPickers is a trading platform app that users can trade their shoes.
               </p>
-              <p>
-                
+              <p className="feature">
+                Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.
+              </p>
+              <p className="skillStacks">
+                ReactJS, NodeJs, Express.js, Sass, PostgreSQL 
               </p>
             </div>
             <img className="right" src="assets/SneakersPickers.gif" alt=""/>

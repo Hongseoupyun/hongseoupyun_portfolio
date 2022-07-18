@@ -1,5 +1,6 @@
 .aboutme{
   background-color: #323647;
+  color: #ebebeb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +16,8 @@
     .title{
       display: flex;
       margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 500;
     }
     .introduction{
       font-size: 16px;
