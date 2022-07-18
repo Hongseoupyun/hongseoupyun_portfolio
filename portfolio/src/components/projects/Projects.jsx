@@ -1,7 +1,10 @@
 import React from "react";
 import "./Projects.scss"
+import {projectsData} from "./data"
 
 export default function Projects() {
+  
+  console.log(projectsData)
   return (
     <div className="projects" id="projects">
       <div className="heading">PROJECTS</div>
