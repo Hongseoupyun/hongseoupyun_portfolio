@@ -8,6 +8,7 @@ export const projectsDatas = [
       "Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.",
     skillStacks: "ReactJS, NodeJs, Express.js, Sass, PostgreSQL",
     img: "assets/SneakersPickers.gif",
+    gitHub:"https://github.com/Hongseoupyun/SneakersPickers-New-version-"
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ export const projectsDatas = [
       "Users can created , Delete and edit schedules for differnet days. Unit testing and Integrated testing written.",
     skillStacks: "ReactJS, Storybook, Jest, Cypress, Sass",
     img: "assets/scheduler.gif",
+    gitHub:"https://github.com/Hongseoupyun/Interview-Scheduler"
   },
 ];
 

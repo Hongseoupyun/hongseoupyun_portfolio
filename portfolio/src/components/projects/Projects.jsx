@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import "./Projects.scss";
 import { projectsDatas } from "./data";
+import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = function (direction) {
     direction === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
+      ? setCurrentSlide(
+        currentSlide > 0 ? currentSlide - 1 : projectsDatas.length - 1
+      )
       : setCurrentSlide(
-          currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
-        );
+        currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
+      );
   };
 
   return (
@@ -28,6 +31,16 @@ export default function Projects() {
                   <p className="description">{data.description}</p>
                   <p className="feature">{data.feature}</p>
                   <p className="skillStacks">{data.skillStacks}</p>
+                </div>
+
+                <div className="gitHub">
+                  <a
+                    href={data.gitHub}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub className="icon" />
+                  </a>
                 </div>
                 <img className="right" src={data.img} alt="" />
               </div>
