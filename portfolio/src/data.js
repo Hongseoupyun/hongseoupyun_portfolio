@@ -1,0 +1,1 @@
+const data = [{id:1, title:"SneakersPickers", description:"SnekersPickers is a trading platform app that users can trade their shoes.",feature:"Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.",skillStacks:"ReactJS, NodeJs, Express.js, Sass, PostgreSQL", img:"assets/SneakersPickers.gif",}]
