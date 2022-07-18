@@ -1,35 +1,52 @@
-import React from "react";
-import "./Projects.scss"
-import {projectsData} from "./data"
+import React, { useState } from "react";
+import "./Projects.scss";
+import { projectsDatas } from "./data";
 
 export default function Projects() {
-  
-  console.log(projectsData)
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const handleClick = function (direction) {
+    direction === "left"
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 1)
+      : setCurrentSlide(
+          currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
+        );
+  };
+
   return (
     <div className="projects" id="projects">
       <div className="heading">PROJECTS</div>
-      <div className="slider">
-        <div className="container">
-          <div className="item">
-            <div className="left">
-              <h2 className="title">SneakersPickers</h2>
-              <p className="description">
-              SnekersPickers is a trading platform app that users can trade their shoes.
-              </p>
-              <p className="feature">
-                Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.
-              </p>
-              <p className="skillStacks">
-                ReactJS, NodeJs, Express.js, Sass, PostgreSQL 
-              </p>
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
+        {projectsDatas.map((data) => {
+          return (
+            <div className="container">
+              <div className="item">
+                <div className="left">
+                  <h2 className="title">{data.title}</h2>
+                  <p className="description">{data.description}</p>
+                  <p className="feature">{data.feature}</p>
+                  <p className="skillStacks">{data.skillStacks}</p>
+                </div>
+                <img className="right" src={data.img} alt="" />
+              </div>
             </div>
-            <img className="right" src="assets/SneakersPickers.gif" alt=""/>
-          </div>
-        </div>
+          );
+        })}
       </div>
-      <img src="assets/arrow.png" alt="" className="arrow left"/>
-      <img src="assets/arrow.png" alt="" className="arrow right"/>
-
+      <img
+        src="assets/arrow.png"
+        alt=""
+        className="arrow left"
+        onClick={() => handleClick("left")}
+      />
+      <img
+        src="assets/arrow.png"
+        alt=""
+        className="arrow right"
+        onClick={() => handleClick("right")}
+      />
     </div>
-  )
+  );
 }

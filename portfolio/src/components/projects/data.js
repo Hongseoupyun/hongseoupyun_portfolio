@@ -1,6 +1,6 @@
-export const projectsData = [
+export const projectsDatas = [
   {
-    id: 1,
+    id: 0,
     title: "SneakersPickers",
     description:
       "SnekersPickers is a trading platform app that users can trade their shoes.",
@@ -10,7 +10,7 @@ export const projectsData = [
     img: "assets/SneakersPickers.gif",
   },
   {
-    id: 2,
+    id: 1,
     title: "Scheduler",
     description:
       " A Single Page App scheduler client application to allow users to book interviews with interviewers and schedule data from an API server.",
