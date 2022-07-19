@@ -18,33 +18,47 @@
       font-size: 50px;
       font-weight: 500;
       position: absolute;
-      top:200px;
+      top: 200px;
     }
-  
+
     .contactLinks {
       display: flex;
       flex-direction: row;
       width: 50vw;
       justify-content: space-around;
       position: absolute;
-      top:375px;
-      div{
+      top: 375px;
+      div {
         height: auto;
-        .icons{
+        .icons {
           height: auto;
           width: 50px;
           color: #a4a5af;
-          transform: scale(1.0);
+          transform: scale(1);
           transition: 0.5s;
-          &:hover{
+          &:hover {
             color: #ffc25b;
             transform: scale(1.1);
             transition: 0.5s;
           }
         }
       }
-
-     
     }
   }
 }
+
+@media screen and (max-width: 406px) {
+  
+    .contact {
+      .mainContainer {
+        .tittle {
+          font-size: 37px;
+          font-weight: 500;
+        }
+        .contactLinks {
+          width: 92vw;
+        }
+      }
+    }
+  }
+
