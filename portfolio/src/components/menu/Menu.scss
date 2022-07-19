@@ -1,7 +1,9 @@
+@import "../../global.scss";
+
 .menu {
   width: 300px;
   height: 100vh;
-  background-color:#323647;
+  background-color: #323647;
   position: fixed;
   top: 0;
   right: -300px;
@@ -23,8 +25,14 @@
     font-size: 30px;
     font-weight: 300;
     width: 60%;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     li {
-      &:hover{
+      &:hover {
         font-weight: 500;
         color: #ffc25b;
       }
@@ -36,4 +44,16 @@
       }
     }
   }
+}
+
+@include mobile {
+  .menu{
+    width: 100vw;
+    right: -585px;
+    transition: all 1.4s ease;
+    &.active {
+      right: 0;
+    }
+  }
+  
 }
