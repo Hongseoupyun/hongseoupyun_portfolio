@@ -1,37 +1,78 @@
-.aboutme{
+@import "../../global.scss";
+
+.aboutme {
   background-color: #323647;
   color: #ebebeb;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.aboutMeContainer{
+.aboutMeContainer {
   display: flex;
   flex-direction: row;
-  .imgContainer{
+  .imgContainer {
     margin-right: 20px;
+    width: auto;
   }
-  .contents{
+  .contents {
     height: auto;
-    .title{
+    .title {
       display: flex;
       margin-bottom: 20px;
       font-size: 30px;
       font-weight: 500;
     }
-    .introduction{
+    .introduction {
       font-size: 16px;
       margin-bottom: 22px;
     }
   }
 }
-.aboutMeImg{
+.aboutMeImg {
   height: 350px;
   width: 350px;
   object-fit: cover;
   border-radius: 20px;
 }
 
+@media  screen and  (max-width:1088px )  {
 
 
+  .aboutme {
+    display: flex;
+    align-items: inherit;
+  }
+  .aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 0px;
+      height: 87%;
+    }
+    .contents {
+      height: 100%;
+      padding: 1px;
+      padding-left: 22px;
+      padding-right: 22px;
+      .title {
+        justify-content: center;
+        margin-bottom: 0px;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: -8px;
+      }
+      .introduction {
+        font-size: 12.7px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+  .aboutMeImg {
+    height: 250px;
+    width: 250px;
+  }
+}
 
