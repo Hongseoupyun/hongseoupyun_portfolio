@@ -1,19 +1,33 @@
 import React, { useState } from "react";
 import "./Projects.scss";
 import { projectsDatas } from "./data";
-import { FaGithub } from "react-icons/fa";
+import ProjectsItem from "./ProjectsItem";
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const handleClick = function (direction) {
     direction === "left"
       ? setCurrentSlide(
-        currentSlide > 0 ? currentSlide - 1 : projectsDatas.length - 1
-      )
+          currentSlide > 0 ? currentSlide - 1 : projectsDatas.length - 1
+        )
       : setCurrentSlide(
-        currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
-      );
+          currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
+        );
   };
+
+  const projectSlides = projectsDatas.map((data) => {
+    return (
+      <ProjectsItem
+        key={data.id}
+        title={data.title}
+        description={data.description}
+        feature={data.feature}
+        skillStacks={data.skillStacks}
+        gitHub={data.gitHub}
+        img={data.img}
+      />
+    );
+  });
 
   return (
     <div className="projects" id="projects">
@@ -22,31 +36,7 @@ export default function Projects() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {projectsDatas.map((data) => {
-          return (
-            <div className="container">
-              <div className="item">
-                <div className="left">
-                  <h2 className="title">{data.title}</h2>
-                  <p className="description">{data.description}</p>
-                  <p className="feature">{data.feature}</p>
-                  <p className="skillStacks">{data.skillStacks}</p>
-                </div>
-
-                <div className="gitHub">
-                  <a
-                    href={data.gitHub}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaGithub className="icon" />
-                  </a>
-                </div>
-                <img className="right" src={data.img} alt="" />
-              </div>
-            </div>
-          );
-        })}
+        {projectSlides}
       </div>
       <img
         src="assets/arrow.png"
