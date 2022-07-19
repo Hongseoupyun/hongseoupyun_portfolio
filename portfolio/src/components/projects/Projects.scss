@@ -12,7 +12,7 @@
     height: 55px;
     position: absolute;
     color: white;
-    @include mobile{
+    @include mobile {
       display: none;
     }
     filter: brightness(0) invert(1);
@@ -46,9 +46,9 @@
     top: 35px;
     font-size: 50px;
     font-weight: 500;
-    @include mobile{
+    @include mobile {
       font-size: 25px;
-      top:0px;
+      top: 0px;
     }
   }
   .slider {
@@ -57,7 +57,7 @@
     position: absolute;
     left: 0;
     transition: all ease-out 1s;
-    @include mobile{
+    @include mobile {
       height: 1000px;
       margin-top: 499px;
       flex-direction: column;
@@ -68,7 +68,7 @@
       width: 100vw;
       justify-content: center;
       align-items: center;
-      @include mobile{
+      @include mobile {
         height: 100vh;
       }
       .item {
@@ -80,7 +80,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        @include mobile{
+        @include mobile {
           flex-direction: column-reverse;
           width: 90%;
           height: 96%;
@@ -98,12 +98,18 @@
           height: 93.2%;
           width: 46.3%;
           border-radius: 20px;
-          background-color: rgba(255, 255, 255, .4);
+          background-color: rgba(255, 255, 255, 0.4);
+          @include mobile {
+            top: 10px;
+            left: 10px;
+            height: 45%;
+            width: 94.3%;
+          }
           &:hover {
             z-index: 5;
           }
-          a{
-            .icon{
+          a {
+            .icon {
               color: black;
               transform: scale(1);
               transition: 0.6s;
@@ -125,7 +131,7 @@
           justify-content: space-around;
           .title {
             font-size: 32px;
-            @include mobile{
+            @include mobile {
               height: 55%;
               font-size: 20px;
             }
@@ -133,7 +139,7 @@
           .skillStacks {
             font-size: 17px;
             font-weight: 500;
-            @include mobile{
+            @include mobile {
               height: 27%;
               font-size: 14px;
             }
@@ -146,7 +152,7 @@
           margin-right: 12px;
           z-index: 3;
           transition: 0.3s;
-          @include mobile{
+          @include mobile {
             margin-right: 0px;
             width: 317px;
             margin-top: 10px;
@@ -160,9 +166,8 @@
   }
 }
 
-
-@include mobile{
-  .feature{
+@include mobile {
+  .feature {
     height: 100%;
     font-size: 12.2px;
     display: flex;
