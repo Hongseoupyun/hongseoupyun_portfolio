@@ -27,11 +27,11 @@ export const projectsDatas = [
     id: 3,
     title: "Tweeter",
     description:
-      " A Single Page Twitter Clones Application",
+      " A Single Page Twitter Clones Application displays a list of tweets entered by user.",
     feature:
       "Users can create tweets and app displays a list of it",
     skillStacks: "HTML, Sass, JS, jQuery, NodeJS, Express",
-    img: "assets/scheduler.gif",
+    img: "assets/tweeter.gif",
     gitHub:"https://github.com/Hongseoupyun/tweeter",
     demo:undefined
   }
