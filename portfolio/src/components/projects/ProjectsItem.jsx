@@ -19,10 +19,11 @@ export default function ProjectsItem(props) {
         <div className="gitHub">
           <a href={gitHub} target="_blank" rel="noreferrer">
             <FaGithub className="icon" />
-          </a>
-          <a href={demo} target="_blank" rel="noreferrer">
+          </a>{
+            demo!==undefined?<a href={demo} target="_blank" rel="noreferrer">
             <BsFillEyeFill className="icon" />
-          </a>
+          </a>:<></>
+          }
         </div>
         <img className="right" src={img} alt="" />
       </div>

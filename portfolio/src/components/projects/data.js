@@ -20,7 +20,8 @@ export const projectsDatas = [
       "Users can created , Delete and edit schedules for differnet days. Unit testing and Integrated testing written.",
     skillStacks: "ReactJS, Storybook, Jest, Cypress, Sass",
     img: "assets/scheduler.gif",
-    gitHub:"https://github.com/Hongseoupyun/Interview-Scheduler"
+    gitHub:"https://github.com/Hongseoupyun/Interview-Scheduler",
+    demo:undefined
   },
   {
     id: 3,
@@ -31,7 +32,8 @@ export const projectsDatas = [
       "Users can create tweets and app displays a list of it",
     skillStacks: "HTML, Sass, JS, jQuery, NodeJS, Express",
     img: "assets/scheduler.gif",
-    gitHub:"https://github.com/Hongseoupyun/tweeter"
+    gitHub:"https://github.com/Hongseoupyun/tweeter",
+    demo:undefined
   }
 ];
 
