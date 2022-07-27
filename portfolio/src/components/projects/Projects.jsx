@@ -24,6 +24,7 @@ export default function Projects() {
         feature={data.feature}
         skillStacks={data.skillStacks}
         gitHub={data.gitHub}
+        demo={data.demo}
         img={data.img}
       />
     );

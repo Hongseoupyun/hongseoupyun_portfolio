@@ -8,7 +8,8 @@ export const projectsDatas = [
       "Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.",
     skillStacks: "ReactJS, NodeJs, Express.js, Sass, PostgreSQL",
     img: "assets/SneakersPickers.gif",
-    gitHub:"https://github.com/Hongseoupyun/SneakersPickers-New-version-"
+    gitHub:"https://github.com/Hongseoupyun/SneakersPickers-New-version-",
+    demo:"https://sneakerspickers.herokuapp.com/"
   },
   {
     id: 1,
@@ -21,6 +22,17 @@ export const projectsDatas = [
     img: "assets/scheduler.gif",
     gitHub:"https://github.com/Hongseoupyun/Interview-Scheduler"
   },
+  {
+    id: 3,
+    title: "Tweeter",
+    description:
+      " A Single Page Twitter Clones Application",
+    feature:
+      "Users can create tweets and app displays a list of it",
+    skillStacks: "HTML, Sass, JS, jQuery, NodeJS, Express",
+    img: "assets/scheduler.gif",
+    gitHub:"https://github.com/Hongseoupyun/tweeter"
+  }
 ];
 
 
