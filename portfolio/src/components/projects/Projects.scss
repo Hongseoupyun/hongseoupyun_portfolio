@@ -83,7 +83,7 @@
         @include mobile {
           flex-direction: column-reverse;
           width: 90%;
-          height: 96%;
+          height: 94%;
           margin-bottom: 20px;
         }
         .gitHub {
@@ -132,8 +132,7 @@
           .title {
             font-size: 32px;
             @include mobile {
-              height: 55%;
-              font-size: 20px;
+              font-size: 17px;
             }
           }
           .skillStacks {
@@ -168,14 +167,12 @@
 
 @include mobile {
   .feature {
-    height: 100%;
-    font-size: 12.2px;
+    font-size: 10px;
     display: flex;
     align-items: center;
   }
   .description {
-    height: 70%;
-    font-size: 12.2px;
+    font-size: 10px;
     display: flex;
     align-items: center;
   }
