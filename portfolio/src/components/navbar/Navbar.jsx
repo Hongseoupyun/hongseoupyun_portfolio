@@ -1,26 +1,29 @@
 import React from "react";
 import "./Navbar.scss"
 
+
 export default function Navbar(props) {
   const { menuOpen, setMenuOpen } = props
+ 
 
   return (
-    <div className={menuOpen? "navbar active" : "navbar" }>
+    <div className={menuOpen ? "navbar active" : "navbar"}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">HSY</a>
+          <a href="#intro" className="logo">
+            HSY</a>
         </div>
         <div className="right">
           <div className="navContents">
-           <a href="#aboutme">ABOUT</a> 
+            <a className="navLink" href="#aboutme">ABOUT</a>
           </div>
           <div className="navContents">
-           <a href="#projects">PROJECTS</a> 
+            <a className="navLink" href="#projects">PROJECTS</a>
           </div>
           <div className="navContents">
-            <a href="#contact">CONTACT</a>
+            <a className="navLink" href="#contact">CONTACT</a>
           </div>
-          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>

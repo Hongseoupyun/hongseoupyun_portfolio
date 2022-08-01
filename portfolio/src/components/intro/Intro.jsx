@@ -21,7 +21,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
+    <section className="intro" id="intro">
       <div className="wrapper">
       <ul className="bubbles">
         <li></li>
@@ -45,6 +45,6 @@ export default function Intro() {
       <a className="introArrow" href="#aboutme">
         <img src="assets/arrow-down.png" alt="" />
       </a>
-    </div>
+    </section>
   );
 }

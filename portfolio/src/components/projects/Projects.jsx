@@ -31,7 +31,7 @@ export default function Projects() {
   });
 
   return (
-    <div className="projects" id="projects">
+    <section className="projects" id="projects">
       <div className="heading">PROJECTS</div>
       <div
         className="slider"
@@ -51,6 +51,6 @@ export default function Projects() {
         className="arrow right"
         onClick={() => handleClick("right")}
       />
-    </div>
+    </section>
   );
 }

@@ -1,4 +1,5 @@
 @import "../../global.scss";
+
 .navbar {
   background-color: #242734;
   width: 100%;
@@ -7,7 +8,8 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  a{
+
+  a {
     text-decoration: none;
     color: #fff;
   }
@@ -16,14 +18,15 @@
     padding: 10px 30px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
+
     .left {
       .logo {
         font-size: 30px;
         font-weight: 700;
         text-decoration: none;
-        color:#ffc25b;
+        color: #ffc25b;
       }
     }
   }
@@ -32,52 +35,71 @@
     display: flex;
     width: 20%;
     justify-content: space-between;
-    @include navMobile{
+
+    @include navMobile {
       width: auto;
     }
-    .navContents{
-      @include navMobile{
+
+    .navContents {
+      height: auto;
+      @include navMobile {
         display: none;
       }
-      a{
-        transition: 1s;
-        &:hover{
-          color:#ffc25b;
-          transition: 1s;
+      .navLink {
+        display: inline-block;
+        height: auto;
+        border-bottom: 3px solid transparent;
+        &.active{
+          color: #ffc25b;
+          transition: 0.5s ease;
+          border-bottom: 3px solid #ffc25b;
+        }
+        &:hover {
+          color: #ffc25b;
+          transition: 0.5s ease;
+          border-bottom: 3px solid #ffc25b;
         }
       }
     }
+
     .hamburger {
       width: 32px;
       height: 25px;
       display: none;
       flex-direction: column;
       justify-content: space-between;
-      @include navMobile{
+
+      @include navMobile {
         display: flex;
       }
+
       cursor: pointer;
+
       span {
         width: 100%;
         height: 3px;
         background-color: white;
         transform-origin: left;
-        transition: all 2s ease; 
+        transition: all 2s ease;
       }
     }
   }
-  &.active{
+
+  &.active {
     background-color: #323647;
     color: white;
-    .hamburger{
-      span{
-        &:first-child{
+
+    .hamburger {
+      span {
+        &:first-child {
           background-color: white;
           transform: rotate(45deg);
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
           opacity: 0;
         }
+
         &:last-child {
           background-color: white;
           transform: rotate(-45deg);
@@ -87,5 +109,3 @@
 
   }
 }
-
-

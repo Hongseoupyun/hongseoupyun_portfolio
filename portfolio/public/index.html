@@ -8,7 +8,7 @@
   <link href="">
   <title>React Portfolio Website </title>
   <style>
-    *{
+    * {
       margin: 0;
       overflow-x: hidden;
     }
@@ -19,6 +19,20 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <!-- <script>
+    const nav = document.querySelectorAll(".navLink")
+    const sec = document.querySelectorAll("section")
+    function activeMenu() {
+      let len = sec.length
+      while (--len && window.scrollY +97  < sec[len].offsetTop) {
+        nav.forEach(ltx => ltx.classList.remove(" active"));
+        nav[len].classList.add(" active")
+      }
+    }
+    activeMenu();
+    window.addEventListener("scroll",activeMenu)
+  </script> -->
 </body>
+
 
 </html>

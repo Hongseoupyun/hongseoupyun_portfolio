@@ -3,7 +3,7 @@ import "./Aboutme.scss"
 
 export default function Aboutme() {
   return (
-    <div className="aboutme" id="aboutme">
+    <section className="aboutme" id="aboutme">
       <div className="aboutMeContainer">
         <div className="imgContainer">
           <img className="aboutMeImg" src="assets/intro-image.png" alt="" />
@@ -24,6 +24,6 @@ export default function Aboutme() {
         </div>
         
       </div>
-    </div>
+    </section>
   )
 }
