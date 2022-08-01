@@ -32,8 +32,11 @@
     display: flex;
     width: 20%;
     justify-content: space-between;
+    @include navMobile{
+      width: auto;
+    }
     .navContents{
-      @include mobile{
+      @include navMobile{
         display: none;
       }
       a{
@@ -50,6 +53,9 @@
       display: none;
       flex-direction: column;
       justify-content: space-between;
+      @include navMobile{
+        display: flex;
+      }
       cursor: pointer;
       span {
         width: 100%;
@@ -81,3 +87,5 @@
 
   }
 }
+
+

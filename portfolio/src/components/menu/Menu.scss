@@ -46,10 +46,10 @@
   }
 }
 
-@include mobile {
+@include navMobile {
   .menu{
     width: 100vw;
-    right: -770px;
+    right: -1060px;
     transition: all 1.4s ease;
     &.active {
       right: 0;
