@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .navbar {
   background-color: #242734;
   width: 100%;
@@ -6,6 +7,10 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
 
   .wrapper {
     padding: 10px 30px;
@@ -24,10 +29,25 @@
   }
 
   .right {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    .navContents{
+      @include mobile{
+        display: none;
+      }
+      a{
+        transition: 1s;
+        &:hover{
+          color:#ffc25b;
+          transition: 1s;
+        }
+      }
+    }
     .hamburger {
       width: 32px;
       height: 25px;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-between;
       cursor: pointer;

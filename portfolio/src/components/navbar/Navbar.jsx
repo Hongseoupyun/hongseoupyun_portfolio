@@ -11,6 +11,15 @@ export default function Navbar(props) {
           <a href="#intro" className="logo">HSY</a>
         </div>
         <div className="right">
+          <div className="navContents">
+           <a href="#aboutme">ABOUT</a> 
+          </div>
+          <div className="navContents">
+           <a href="#projects">PROJECTS</a> 
+          </div>
+          <div className="navContents">
+            <a href="#contact">CONTACT</a>
+          </div>
           <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
