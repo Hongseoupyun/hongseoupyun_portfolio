@@ -11,7 +11,7 @@ export default function Navbar(props) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            HSY</a>
+            H.Y</a>
         </div>
         <div className="right">
           <div className="navContents">
