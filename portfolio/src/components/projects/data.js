@@ -6,7 +6,7 @@ export const projectsDatas = [
       "SnekersPickers is a trading platform app that users can trade their shoes.",
     feature:
       "Users can created and updated profile, and listings. Users can make trade offer and get notification for trade offer.",
-    skillStacks: "ReactJS, NodeJs, Express.js, Sass, PostgreSQL REST Api, Heroku",
+    skillStacks: "ReactJS, NodeJs, Express.js, Sass, PostgreSQL, REST Api, Heroku",
     img: "assets/SneakersPickers.gif",
     gitHub:"https://github.com/Hongseoupyun/SneakersPickers-New-version-",
     demo:"https://sneakerspickers.herokuapp.com/"
