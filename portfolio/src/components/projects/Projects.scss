@@ -147,6 +147,9 @@
           flex-direction: column;
           height: 87%;
           justify-content: space-around;
+          @include mobile{
+            flex:0.5;
+          }
 
           .title {
             font-size: 32px;
@@ -161,7 +164,7 @@
             font-weight: 500;
 
             @include mobile {
-              font-size: 13px;
+              font-size: 10.5px;
             }
           }
         }
@@ -176,6 +179,7 @@
 
           @include mobile {
             margin-right: 0px;
+            flex: 0.5;
             width: 93%;
             margin-top: 10px;
           }
