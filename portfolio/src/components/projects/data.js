@@ -13,6 +13,18 @@ export const projectsDatas = [
   },
   {
     id: 1,
+    title: "ShootingGame",
+    description:
+      "Web-based Shooting Game developed by Vanila JavaScript",
+    feature:
+      "Hit spacebar to fire bullets to get rid of monsters",
+    skillStacks: "JavaScript",
+    img: "assets/game1.gif",
+    gitHub:"https://github.com/Hongseoupyun/ShootingGame_Vanila-JavaScript",
+    demo:"https://spaceshipvs.netlify.app/"
+  },
+  {
+    id: 2,
     title: "Scheduler",
     description:
       " A Single Page App scheduler client application to allow users to book interviews with interviewers and schedule data from an API server.",
