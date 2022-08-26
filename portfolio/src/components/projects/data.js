@@ -18,7 +18,7 @@ export const projectsDatas = [
       "Web-based Shooting Game developed by Vanila JavaScript/OOP",
     feature:
       "Hit spacebar to fire bullets to get rid of monsters",
-    skillStacks: "JavaScript",
+    skillStacks: "JavaScript OOP",
     img: "assets/game1.gif",
     gitHub:"https://github.com/Hongseoupyun/ShootingGame_Vanila-JavaScript",
     demo:"https://spaceshipvs.netlify.app/"
