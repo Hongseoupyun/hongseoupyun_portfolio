@@ -15,7 +15,7 @@ export const projectsDatas = [
     id: 1,
     title: "ShootingGame",
     description:
-      "Web-based Shooting Game developed by Vanila JavaScript",
+      "Web-based Shooting Game developed by Vanila JavaScript/OOP",
     feature:
       "Hit spacebar to fire bullets to get rid of monsters",
     skillStacks: "JavaScript",
