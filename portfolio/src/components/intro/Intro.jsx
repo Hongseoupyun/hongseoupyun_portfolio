@@ -15,7 +15,7 @@ export default function Intro() {
         backDelay: 1200,
         typeSpeed: 50,
         backSpeed: 50,
-        strings: ["Full Stack Web developer", "Persistent Learner", "Problem-solver"],
+        strings: ["Web developer", "Persistent Learner", "Problem-solver"],
       });
     }
   }, []);
@@ -36,7 +36,7 @@ export default function Intro() {
         <li></li>
       </ul>
         <h2>Hi there, I'm</h2>
-        <h1>Hongseoup Yun</h1>
+        <h1>Simon Yun</h1>
         <div className="h3">
           <b ref={textRef}></b>
         </div>
