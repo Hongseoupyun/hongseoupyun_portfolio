@@ -15,7 +15,7 @@ export default function Intro() {
         backDelay: 1200,
         typeSpeed: 50,
         backSpeed: 50,
-        strings: ["Web developer", "Persistent Learner", "Problem-solver"],
+        strings: ["Web developer","QA Analyst", "Persistent Learner", "Problem-solver"],
       });
     }
   }, []);
