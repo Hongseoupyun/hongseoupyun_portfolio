@@ -15,7 +15,13 @@ export default function Intro() {
         backDelay: 1200,
         typeSpeed: 50,
         backSpeed: 50,
-        strings: ["Web developer","QA Analyst", "Persistent Learner", "Problem-solver"],
+        strings: [
+          "Web developer",
+          "Digital Marketing Strategist",
+          "QA Engineer",
+          "Persistent Learner",
+          "Problem-solver",
+        ],
       });
     }
   }, []);
@@ -23,18 +29,18 @@ export default function Intro() {
   return (
     <section className="intro" id="intro">
       <div className="wrapper">
-      <ul className="bubbles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        <ul className="bubbles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <h2>Hi there, I'm</h2>
         <h1>Simon Yun</h1>
         <div className="h3">
