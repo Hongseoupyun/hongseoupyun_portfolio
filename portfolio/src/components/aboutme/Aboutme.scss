@@ -10,26 +10,30 @@
 .aboutMeContainer {
   display: flex;
   flex-direction: row;
+  
   .imgContainer {
     margin-right: 20px;
+    display: flex;
     width: auto;
+    flex-direction: column;
+    justify-content: center;
   }
   .contents {
     height: auto;
+    width: 550px;
     .title {
       display: flex;
-      margin-bottom: 20px;
       font-size: 30px;
       font-weight: 500;
     }
     .introduction {
       font-size: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 0.5rem;
     }
   }
 }
 .aboutMeImg {
-  height: 350px;
+  height: auto;
   width: 350px;
   object-fit: cover;
   border-radius: 20px;
@@ -48,10 +52,11 @@
       justify-content: center;
       align-items: center;
       margin-right: 0px;
-      height: 87%;
+      height: 65%;
     }
     .contents {
       height: 100%;
+      width: auto;
       padding: 1px;
       padding-left: 22px;
       padding-right: 22px;
