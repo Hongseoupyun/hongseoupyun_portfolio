@@ -1,0 +1,27 @@
+.skills-section {
+  background-color: #323647;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .skills-icon {
+      display: inline;
+      img {
+        width: 145px;
+        height: 145px;
+      }
+    }
+  }
+}

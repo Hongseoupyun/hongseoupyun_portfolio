@@ -13,6 +13,9 @@ export default function Menu (props){
           <a href="#aboutme">About Me</a>
         </li>
         <li onClick={()=>setMenuOpen(!menuOpen)}>
+          <a href="#skills">Skills</a>
+        </li>
+        <li onClick={()=>setMenuOpen(!menuOpen)}>
           <a href="#projects">Projects</a>
         </li>
         <li onClick={()=>setMenuOpen(!menuOpen)}>
