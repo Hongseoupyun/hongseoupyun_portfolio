@@ -5,12 +5,13 @@ export default function useScrollPosition() {
 
   useEffect(() => {
     const updatePosition = () => {
-      setScrollPosition(window.scrollY)
+      setScrollPosition(window.pageYOffset);
     };
-    window.addEventListener('scroll', updatePosition);
+    window.addEventListener("scroll", updatePosition);
     updatePosition();
-    return () => { window.removeEventListener('scroll', updatePosition) };
-
-  }, [])
-  return scrollPosition
+    return () => {
+      window.removeEventListener("scroll", updatePosition);
+    };
+  }, []);
+  return scrollPosition;
 }

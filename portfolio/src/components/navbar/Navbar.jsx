@@ -4,6 +4,8 @@ import useScrollPosition from "../../hooks/useScrollPosition";
 
 export default function Navbar(props) {
   const { menuOpen, setMenuOpen } = props;
+  const scrollPosition = useScrollPosition();
+  console.log(scrollPosition);
 
   return (
     <div className={menuOpen ? "navbar active" : "navbar"}>
