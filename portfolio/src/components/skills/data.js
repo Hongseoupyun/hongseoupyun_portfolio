@@ -8,6 +8,10 @@ export const skillsDatas = [
     img: "assets/JavaScript-logo.png",
   },
   {
+    name: "TypeScript",
+    img: "assets/typescript-logo.png",
+  },
+  {
     name: "ReactJS",
     img: "assets/react-logo.png",
   },
