@@ -16,9 +16,8 @@ export default function Intro() {
         typeSpeed: 50,
         backSpeed: 50,
         strings: [
-          "Web developer",
-          "Digital Marketing Strategist",
-          "QA Engineer",
+          "Full Stack Developer",
+          "IT/Technical Support Analyst",
           "Persistent Learner",
           "Problem-solver",
         ],
