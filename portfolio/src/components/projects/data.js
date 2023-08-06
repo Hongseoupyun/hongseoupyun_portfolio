@@ -12,17 +12,6 @@ export const projectsDatas = [
     demo:"https://sushi4u.ca/"
   },
   {
-    id: 1,
-    title: "Automated QA for TVO.org",
-    description:
-      "10 automated test scenarios for TVO.org all docs page using Cypress.",
-    feature:
-      "Tests are written in Cypress in BDD style and run on chrome browser.",
-    skillStacks: "Cypress, JavaScript",
-    img: "assets/TVO.png",
-    gitHub: "https://github.com/Hongseoupyun/TVO_QA_Assignment",
-  },
-  {
     id: 2,
     title: "SneakersPickers",
     description:
