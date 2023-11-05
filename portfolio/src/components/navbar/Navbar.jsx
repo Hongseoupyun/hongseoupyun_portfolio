@@ -1,10 +1,8 @@
 import React from "react";
 import "./Navbar.scss";
-import useScrollPosition from "../../hooks/useScrollPosition";
 
 export default function Navbar(props) {
   const { menuOpen, setMenuOpen } = props;
-  const scrollPosition = useScrollPosition();
 
   return (
     <div className={menuOpen ? "navbar active" : "navbar"}>

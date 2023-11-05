@@ -7,7 +7,7 @@ export const projectsDatas = [
     feature:
       "Informations about the restaurants including Location, Menus and UberEats. QR Code provided for guests to view menu.",
     skillStacks: "React, Firebase, Figma",
-    img: "assets/sushi4u.gif",
+    img: "https://i.imgur.com/2yWOlGE.gif",
     gitHub: "https://github.com/Hongseoupyun/IYD_Sushi4You",
     demo:"https://sushi4u.ca/"
   },
