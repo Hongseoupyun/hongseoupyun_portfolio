@@ -1,15 +1,20 @@
 import React from "react";
-import { skillsDatas } from "./data";
+import { useSkillData } from "../../hooks/useSkillData"; // Adjust the import path as necessary
 import "./Skills.scss";
 
 export default function Skills() {
-  const skills = skillsDatas.map((data) => {
+  const { skillData, loading } = useSkillData();
+  const skills = skillData.map((data) => {
     return (
       <div className="skills-icon">
-        <img src={data.img} alt="" />
+        <img src={data.img} alt={data.name} />
       </div>
     );
   });
+
+  if (loading) {
+    return <div>Loading...</div>; 
+  }
 
   return (
     <section className="skills-section" id="skills">

@@ -31,7 +31,7 @@ export default function Projects() {
   ));
 
   if (loading) {
-    return <div>Loading...</div>; // Or any loading spinner component
+    return <div>Loading...</div>; 
   }
 
   return (
