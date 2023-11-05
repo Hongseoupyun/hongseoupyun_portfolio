@@ -1,34 +1,38 @@
 import React, { useState } from "react";
 import "./Projects.scss";
-import { projectsDatas } from "./data";
 import ProjectsItem from "./ProjectsItem";
+import { useProjectData } from "../../hooks/useProjectData"; // Adjust the import path as necessary
 
 export default function Projects() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const handleClick = function (direction) {
+  const { projectDatas, loading } = useProjectData();
+
+  const handleClick = (direction) => {
     direction === "left"
       ? setCurrentSlide(
-          currentSlide > 0 ? currentSlide - 1 : projectsDatas.length - 1
+          currentSlide > 0 ? currentSlide - 1 : projectDatas.length - 1
         )
       : setCurrentSlide(
-          currentSlide < projectsDatas.length - 1 ? currentSlide + 1 : 0
+          currentSlide < projectDatas.length - 1 ? currentSlide + 1 : 0
         );
   };
 
-  const projectSlides = projectsDatas.map((data) => {
-    return (
-      <ProjectsItem
-        key={data.id}
-        title={data.title}
-        description={data.description}
-        feature={data.feature}
-        skillStacks={data.skillStacks}
-        gitHub={data.gitHub}
-        demo={data.demo}
-        img={data.img}
-      />
-    );
-  });
+  const projectSlides = projectDatas.map((data) => (
+    <ProjectsItem
+      key={data.id}
+      title={data.title}
+      description={data.description}
+      feature={data.feature}
+      skillStacks={data.skillStacks}
+      gitHub={data.gitHub}
+      demo={data.demo}
+      img={data.img}
+    />
+  ));
+
+  if (loading) {
+    return <div>Loading...</div>; // Or any loading spinner component
+  }
 
   return (
     <section className="projects" id="projects">
