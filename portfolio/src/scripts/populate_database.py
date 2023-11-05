@@ -4,13 +4,15 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 # Use the service account
-cred = credentials.Certificate('portfolio/src/scripts/adminSdk.json')
+# Use the relative path if both Python script and adminSdk.json are in the same directory
+cred = credentials.Certificate('adminSdk.json')
 firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
 # Path to your JSON file
-json_file_path = 'portfolio/src/scripts/projectData.json'
+# Use the relative path if both Python script and projectData.json are in the same directory
+json_file_path = 'projectData.json'
 
 # Function to upload data to Firestore
 def upload_data_to_firestore(collection_name, json_file_path):
