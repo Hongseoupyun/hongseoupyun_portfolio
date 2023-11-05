@@ -1,51 +1,51 @@
 [
   {
     "name": "HTML/CSS",
-    "img": "assets/htmlcss-logo.jpeg"
+    "img": "https://i.imgur.com/DL4Tezo.jpg"
   },
   {
     "name": "JavaScript",
-    "img": "assets/JavaScript-logo.png"
+    "img": "https://i.imgur.com/qfJRKhx.png"
   },
   {
-    "name": "TypeScript",
-    "img": "assets/typescript-logo.png"
+    "name": "Python",
+    "img": "https://i.imgur.com/sbJ4j4A.jpg"
   },
   {
     "name": "ReactJS",
-    "img": "assets/react-logo.png"
+    "img": "https://i.imgur.com/wbufaef.png"
   },
   {
     "name": "NodeJS",
-    "img": "assets/nodejs-logo.png"
+    "img": "https://i.imgur.com/gwlI16j.png"
   },
   {
     "name": "PostgreSQL",
-    "img": "assets/postgresql-logo.jpeg"
+    "img": "https://i.imgur.com/rymvBGR.jpg"
   },
   {
     "name": "ChartJS",
-    "img": "assets/Chartjs-logo.png"
+    "img": "https://i.imgur.com/QFOmdsH.png"
   },
   {
     "name": "Jest",
-    "img": "assets/jest-logo.png"
+    "img": "https://i.imgur.com/wbxBvNK.png"
   },
   {
     "name": "Cypress",
-    "img": "assets/cypress-logo.jpeg"
+    "img": "https://i.imgur.com/BYiRyvy.jpg"
   },
   {
     "name": "Postman",
-    "img": "assets/postman-logo.png"
+    "img": "https://i.imgur.com/8tMJNjB.png"
   },
   {
     "name": "Ruby on Rails",
-    "img": "assets/rails-logo.png"
+    "img": "https://i.imgur.com/21LLJLc.png"
   },
   {
     "name": "Git",
-    "img": "assets/git-logo.png"
+    "img": "https://i.imgur.com/L7uWfRJ.png"
   },
   {
     "name": "GitHub",
@@ -53,10 +53,10 @@
   },
   {
     "name": "Figma",
-    "img": "assets/figma-logo.png"
+    "img": "https://i.imgur.com/t4gm2IB.png"
   },
   {
     "name": "Docker",
-    "img": "assets/docker-logo.png"
+    "img": "https://i.imgur.com/vwpfHCt.jpg"
   }
 ]
