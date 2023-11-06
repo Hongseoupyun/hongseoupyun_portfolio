@@ -16,8 +16,6 @@ export const useSkillData = () => {
           id: doc.id,
           ...doc.data(),
         }));
-
-        console.log("Firebase data:", data);
         data.sort((a, b) => (a.id > b.id ? 1 : -1)); // Sort the projects according to id
         setSkillData(data);
       } catch (error) {

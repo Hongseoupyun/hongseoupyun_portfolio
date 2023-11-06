@@ -1,11 +1,11 @@
-import React from "react";
-import "./Navbar.scss";
+import React from 'react';
+import './Navbar.scss';
 
 export default function Navbar(props) {
-  const { menuOpen, setMenuOpen } = props;
+  const { menuOpen, setMenuOpen, currentSection } = props;
 
   return (
-    <div className={menuOpen ? "navbar active" : "navbar"}>
+    <div className={menuOpen ? 'navbar active' : 'navbar'}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -13,22 +13,27 @@ export default function Navbar(props) {
           </a>
         </div>
         <div className="right">
-          <div className="navContents">
+          <div className={currentSection === 'intro' ? 'navContents active' : 'navContents'}>
+            <a className="navLink" href="#intro">
+              INTRO
+            </a>
+          </div>
+          <div className={currentSection === 'aboutme' ? 'navContents active' : 'navContents'}>
             <a className="navLink" href="#aboutme">
               ABOUT
             </a>
           </div>
-          <div className="navContents">
+          <div className={currentSection === 'skills' ? 'navContents active' : 'navContents'}>
             <a className="navLink" href="#skills">
               SKILLS
             </a>
           </div>
-          <div className="navContents">
+          <div className={currentSection === 'projects' ? 'navContents active' : 'navContents'}>
             <a className="navLink" href="#projects">
               PROJECTS
             </a>
           </div>
-          <div className="navContents">
+          <div className={currentSection === 'contact' ? 'navContents active' : 'navContents'}>
             <a className="navLink" href="#contact">
               CONTACT
             </a>
