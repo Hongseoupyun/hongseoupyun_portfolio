@@ -31,7 +31,7 @@
     "description": "Web-based Shooting Game developed by Vanila JavaScript/OOP",
     "feature": "Hit spacebar to fire bullets to get rid of monsters",
     "skillStacks": "JavaScript OOP",
-    "img": "assets/game1.gif",
+    "img": "https://i.imgur.com/20qtfRF.gif",
     "gitHub": "https://github.com/Hongseoupyun/ShootingGame_Vanila-JavaScript",
     "demo": "https://spaceshipvs.netlify.app/"
   },
@@ -40,7 +40,7 @@
     "description": "A Single Page App scheduler client application to allow users to book interviews with interviewers and schedule data from an API server.",
     "feature": "Users can created, Delete and edit schedules for different days. Unit testing and Integrated testing written.",
     "skillStacks": "ReactJS, Storybook, Jest, Cypress, Sass",
-    "img": "assets/scheduler.gif",
+    "img": "https://i.imgur.com/bq1GtzU.gif",
     "gitHub": "https://github.com/Hongseoupyun/Interview-Scheduler",
     "demo": null
   },
@@ -49,7 +49,7 @@
     "description": "A Single Page Twitter Clones Application displays a list of tweets entered by user.",
     "feature": "Users can create tweets and app displays a list of it",
     "skillStacks": "HTML, Sass, JS, jQuery, NodeJS, Express",
-    "img": "assets/tweeter.gif",
+    "img": "https://i.imgur.com/ERnhbbq.gif",
     "gitHub": "https://github.com/Hongseoupyun/tweeter",
     "demo": null
   }
