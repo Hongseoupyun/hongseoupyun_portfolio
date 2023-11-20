@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.scss";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 export default function Contact() {
@@ -27,15 +26,6 @@ export default function Contact() {
           >
             <div className="linkedIn">
               <FaLinkedin className="icons" />
-            </div>
-          </a>
-          <a
-            href="https://www.instagram.com/yunhongseoup/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="instagram">
-              <FaInstagramSquare className="icons" />
             </div>
           </a>
           <a
